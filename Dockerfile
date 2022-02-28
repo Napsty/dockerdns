@@ -16,4 +16,4 @@ COPY ./app/* /var/www/app/
 
 EXPOSE 8053
 
-CMD ["php","-S","0.0.0.0:8053","-t","/var/www/app"]
+CMD ["php","-q","-S","0.0.0.0:8053","-t","/var/www/app"]
